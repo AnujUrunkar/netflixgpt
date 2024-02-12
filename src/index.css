@@ -1,3 +1,147 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+body {
+     overflow-x: hidden;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box; /* Optional: includes padding and border in the element's total width and height */
+ }
+.header-container{
+
+     position:  absolute;
+     /* border: 2px solid green; */
+     width: 100vw;
+     /* background: radial-gradient(ellipse at center, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%); */
+     background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+
+     top: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     padding-left : 20px;
+     padding-top: 5px;
+     /* z-index: 2; */
+
+}
+
+.login-container {
+
+     /* border:  2px solid black; */
+     position:  relative;
+     width: 100vw;
+     /* overflow-x: hidden; */
+     /* object-fit: cover; */
+     /* overflow: hidden; */
+     /* width: 100vw; */
+     /* width: 100%; */
+}
+
+.login-form {
+     color: white;
+     background:  rgba(0,0,0,0.7) ;
+     position: absolute;
+     padding: 20px;
+     top: 43%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 23%;
+     height: 75vh;
+     border-radius: 2%;
+     /* border: 2px solid white; */
+
+
+     
+     /* z-index: 2; */
+     
+}
+
+.bg-image-login {
+
+     /* border: 2px solid yellow; */
+     width: 100%;
+     height: 0;
+     padding-bottom: 50%;  
+     /* /Set the aspect ratio, adjust as needed */
+     overflow: hidden;
+     position: relative;
+
+}
+
+.logo{
+     width: 150px;
+}
+
+.bg-logo {
+     width: 100vw;
+     height: 100hv;
+     object-fit: cover;
+}
+
+.form-tag {
+     display: flex;
+     flex-direction: column;
+     /* border: 2px solid yellow; */
+     width: 100%;
+     height: 50vh;
+     /* align-items: center; */
+     /* justify-content: center; */
+     justify-content: space-around;
+}
+
+.email-input {
+     width: 100%;
+     /* border: 2px solid pink; */
+}
+
+.pass-input {
+     width: 100%;
+}
+
+input {
+     width: 100%;
+     padding: 8px;
+     background-color: #292929;
+     font-family: Arial, sans-serif;
+     outline: none;
+     color: #8c8c8c;
+     text-decoration: none;
+     border: none;
+     text-decoration: overline;
+}
+
+.ask {
+     /* border: 2px solid green; */
+     font-family: Arial, sans-serif;
+     font-size : small;
+     cursor:pointer ;
+}
+.signIn-top{
+
+     /* border: 2px solid blue; */
+     font-size: 100%;
+     height: 30px;
+     font-weight: bold;
+     font-family: Arial, sans-serif;
+     font-size: large;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     /* padding-bottom: 10px; */
+     /* font-size: xx-smal; */
+}
+
+.sign-btn {
+     padding: 8px;
+     font-family: Arial, sans-serif;
+     border-radius: 8px;
+     background-color: #E50914;
+     color: white;
+     font-weight: bold;
+     font-size: 85%;
+     cursor: pointer;
+     border: none;
+     /* border-radius: 2%; */
+}
